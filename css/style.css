@@ -1,0 +1,606 @@
+
+label {
+  font-size: 18px;
+}
+
+input[type=checkbox] { 
+  transform: scale(2) !important;
+  }
+
+
+body {
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    color: #701012;
+    font: normal 100%/1.4 sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    color:#ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: lisbeth, sans-serif;
+    font-weight: 100;
+    color:#ffffff;
+    margin-bottom: .5em;
+}
+
+p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #500000;
+}
+
+button {
+    color: #500000;
+}
+
+button:hover {
+    color: #000000;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+
+/* ------------------------------------------
+  Menu Styling
+--------------------------------------------- */
+
+.menu-header {
+  font-size: 35px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.menu-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.vegan {
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+/* ------------------------------------------
+  Parallax Hero
+--------------------------------------------- */
+
+
+.parallax-hero {
+  /* The image used */
+  background-image: url('../assets/wood-background.jpg');
+
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .parallax-hero {
+    width: 100%;
+    background-attachment: scroll;
+  }
+}
+
+.parallax-1 {
+  /* The image used */
+  background-image: url('../assets/ravioli-1.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+ /* Create shadow over image */
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 992px) {
+  .parallax-1 {
+    width: 100%;
+    background-attachment: scroll;
+  }
+}
+
+.parallax-2 {
+  /* The image used */
+  background-image: url('../assets/pasta-la-vista.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+ /* Create shadow over image */
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 992px) {
+  .parallax-1 {
+    width: 100%;
+    background-attachment: scroll;
+  }
+}
+
+
+/* ------------------------------------------
+  Menu Underline Animation
+--------------------------------------------- */
+
+.menu-item a {
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.menu-item a:hover {
+  color: #000000;
+}
+
+.menu-item a:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 15px;
+  right: 25px;
+  left: 25px;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu-item a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-collapse .active a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 40em) {
+  .menu-item a:before {
+      bottom: 8px;
+      left: 10px;
+      width: 50px
+  }
+
+  .menu-item a:hover:before {
+      bottom: 8px;
+      left: 10px;
+      width: 50px
+  }
+}
+
+/* ------------------------------------------
+  General Styles
+--------------------------------------------- */
+
+.row {
+  height: auto;
+}
+
+.custom-btn {
+  background-color: white;
+  width: 200px;
+  font-size:20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.content-image {
+  margin-top: 75px;
+  max-height: 1000px;
+  max-width: 600px;
+  margin-right:100px;
+  margin-left:100px;
+}
+
+.content-text-about {
+  font-size: 18px;
+  padding: 25px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.img-border {
+  border-style: ridge;
+  border-width: 7px;
+  border-color: #500000;
+}
+
+
+  .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .bg-video #player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    top: -60px;
+    height: calc(100% + 120px);
+    z-index: -2;
+  }
+
+  .bg-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+
+@media only screen and (max-width: 992px) {
+  .content-text-about {
+    padding-left: 25px;
+    text-align: center;
+  }
+}
+
+.col-content-text {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+.content-image {
+  display: none;
+}
+}
+
+.main-logo {
+  height: 600px;
+}
+
+.divider-img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100px;
+}
+
+.about-image {
+  max-width: 300px;
+  float: left;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-image {
+    max-width: 250px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.icon {
+  float: left;
+  width: 50px;
+  padding: 7px 0px 5px 5px;
+}
+
+.divider-image {
+  height: 100px;
+}
+
+.home-section {
+  text-align: center;
+  margin-top: 25px;
+  padding: 25px 0 20px 0;
+}
+
+.content-section {
+  padding: 20px 0 20px 0;
+}
+
+
+.content-text {
+    font-size: 18px;
+}
+
+
+.main-header {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 46px;
+}
+
+.main-text {
+    padding-left: 20px;
+}
+
+.row-hero {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+.row-logo {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 85px;
+ -webkit-transition: width 1s ease, height 1s ease;
+}
+
+
+.footer-logo {
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: -15px;
+}
+
+.fifthstar-logo {
+  padding-left: 8px;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.header-text {
+    font-size: 30px;
+    font-family: lisbeth, sans-serif;
+    font-weight: 100;
+    padding: 0 10px;
+    color: #000000;
+
+}
+
+.main-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.row-content{
+    margin-top: 50px;
+}
+
+.hero {
+    padding-top: 55px;
+    max-width: 100%;
+}
+
+.phone a {
+  color: #fff;
+}
+
+.phone a:hover {
+  color: #701012;
+}
+
+/* ------------------------------------------
+  Footer styling
+--------------------------------------------- */
+
+.row-footer {
+
+    border-top: solid;
+    border-color: #ffffff;
+}
+
+.col-footer {
+    margin-top: 15px;
+}
+
+.social-icon {
+  width: 50px;
+  padding: 10px 0px 10px 10px;
+}
+
+.row-footer {
+    background-color: #666666;
+
+}
+
+.footer-logo {
+    padding-top: 25px;
+}
+
+.contact-info-footer {
+  float: left;
+  padding: 0 0 5px 10px;
+  font-size: 15px;
+}
+
+.contact-info-footer a {
+  text-decoration: underline;
+}
+
+.footer-text {
+  float: right;
+  padding: 0 55px 10px 25px;
+  font-size: 15px;
+}
+
+.logo-container {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-container-2 {
+  width: 100px;
+  float: right;
+  margin-right: 80px;
+}
+
+/* ------------------------------------------
+  Responsive Media Query for Footer
+--------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+   
+   .contact-info-footer {
+        text-align: center;
+        float: none !important;
+    }
+
+    .footer-text {
+        text-align: center;
+        float: none !important;
+        padding: 10px 0 10px 25px;
+    }
+
+    .logo-container-2 {
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+        padding: 0;
+      }
+
+    .social-table-footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .social-icon-row {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+}
+
+
+/* ------------------------------------------
+  Responsive Media Query for Logo
+--------------------------------------------- */
+
+
+@media only screen and (min-width: 1382px) {
+   
+  .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 600px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 1382px) {
+   
+  .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 500px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+   
+   .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+        height: 350px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+   
+   .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+        height: 225px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   
+   .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+        height: 200px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+   
+   .logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+        height: 175px;
+    }
+  .main-logo {
+    -webkit-transition: width 1s ease, height 1s ease;
+    height: 250px;
+  }
+}
