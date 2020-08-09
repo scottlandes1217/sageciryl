@@ -85,7 +85,7 @@ h1 {
 
 .parallax-hero {
   /* The image used */
-  background-image: url('../assets/wood-background.jpg');
+  background-image: url('../assets/fractal-background.jpg');
 
   /* Full height */
   height: 100%; 
@@ -95,6 +95,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
@@ -106,7 +107,7 @@ h1 {
 
 .parallax-1 {
   /* The image used */
-  background-image: url('../assets/ravioli-1.jpg');
+  background-image: url('../assets/fractal2.jpg');
 
   /* Full height */
   height: 100%; 
@@ -130,7 +131,7 @@ h1 {
 
 .parallax-2 {
   /* The image used */
-  background-image: url('../assets/pasta-la-vista.jpg');
+  background-image: url('../assets/fractal3.jpg');
 
   /* Full height */
   height: 100%; 
@@ -360,7 +361,7 @@ h1 {
 
 .home-section {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 5px;
   padding: 25px 0 20px 0;
 }
 
