@@ -195,7 +195,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: grey;
+  background: #C4C4C4;
 }
 
 @media screen and (min-width: 40em) {
