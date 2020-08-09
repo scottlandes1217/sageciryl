@@ -396,6 +396,10 @@ h1 {
 .fifthstar-logo {
   padding-left: 8px;
 }
+.fifthstar-logo img {
+  width: 75px;
+  margin-left: 5px;
+}
 
 .main-header {
     text-align: center;
@@ -491,7 +495,8 @@ h1 {
 .logo-container-2 {
   width: 100px;
   float: right;
-  margin-right: 80px;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
 /* ------------------------------------------
