@@ -277,6 +277,13 @@ h1 {
   }
 
 @media only screen and (max-width: 992px) {
+  .bg-video .overlay {
+    background: url("../assets/fractal-background.jpg") no-repeat center center fixed;;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
   .content-text-about {
     padding-left: 25px;
     text-align: center;
@@ -296,6 +303,20 @@ h1 {
 .main-logo {
   height: 600px;
 }
+
+.img-responsive.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .img-responsive {
+    display: none;
+  }
+  .img-responsive.mobile {
+    display: block;
+  }
+}
+
 
 .divider-img {
   margin-right: auto;
@@ -429,14 +450,6 @@ h1 {
     max-width: 100%;
 }
 
-.phone a {
-  color: #fff;
-}
-
-.phone a:hover {
-  color: #701012;
-}
-
 /* ------------------------------------------
   Footer styling
 --------------------------------------------- */
@@ -457,7 +470,7 @@ h1 {
 }
 
 .row-footer {
-    background-color: #666666;
+    background-color: #C4C4C4;
 
 }
 
@@ -607,10 +620,10 @@ h1 {
    
    .logo {
     -webkit-transition: width 1s ease, height 1s ease;
-        height: 175px;
+        height: 285px;
     }
   .main-logo {
     -webkit-transition: width 1s ease, height 1s ease;
-    height: 250px;
+    height: 350px;
   }
 }
